@@ -8,6 +8,9 @@ func loveCalculator (yourName : String, theirName : String) -> String {
     //Generating a random number between 0 and 100
     let loveScore = arc4random_uniform(101)
     
+    //Starting with iOS 12
+    //let loveScore = Int.random(in: 0...100)
+    
     if loveScore > 80 {
         return "Your love score is \(loveScore). You love each other like Kanye loves Kanye"
     }
